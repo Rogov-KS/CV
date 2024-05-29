@@ -103,6 +103,18 @@
 
 
 %----------------------------------------------------------------------------------------
+%	Work Experience
+%----------------------------------------------------------------------------------------
+
+
+\section{Pet Projects}
+
+\cventry{2024}{Multimodal Retrieval}{}{}{}{Multimodal (text+image) retrieval using \href{https://openai.com/index/clip/}{CLIP} and \href{https://www.kaggle.com/c/imaterialist-fashion-2020-fgvc7}{Fashion dataset}. \href{https://github.com/Rogov-KS/MultimodalRetrieval}{GitHub lihk} }
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
