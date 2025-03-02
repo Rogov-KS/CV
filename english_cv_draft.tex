@@ -1,0 +1,324 @@
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+% \usepackage[T1]{fontenc}
+\setlength{\footskip}{4.08003pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.0cm, top=1cm, right=1cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+
+\usepackage[T2A]{fontenc}
+
+%Hyphenation rules
+%--------------------------------------
+\usepackage{hyphenat}
+%--------------------------------------
+\usepackage[english, russian]{babel}
+
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-4.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Konstantin Rogov} % Your Name
+\newcommand{\phone}{929-916-91-01}
+\newcommand{\emaila}{rogovkostyas@yandex.ru}
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{\dimexpr\linewidth-0.3cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} \\ 
+  {\raisebox{0.0\height}{\footnotesize \faPhone}\ +7-\phone} & \href{https://github.com/Rogov-KS}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}}\\
+  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize 
+ \faEnvelope}\ {\emaila}}&\href{https://t.me/RogovKostyaJob}{\raisebox{0.0\height}{\footnotesize \faTelegram}\ {Telegram Account}}
+\end{tabularx}
+}
+
+
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Yandex - ML developer in the Turkish search team}{}
+      
+      {July 2024 year - Mart 2025 year}{}
+      \vspace{-2.0mm}
+
+      \resumeItemListStart
+        \item {Worked with the API of modern LLMs: marking boards using GPT 4o and Claude Sonnet-3.5}
+        \item {Worked with the entire pipeline of learning a cutbust on marked-up data (except for training the base model) is data preprocessing, data markup with the base model, distillation of the base model into a formula (with the selection of hyperparameters), rolling out into a prod and offline experiment}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Yandex - Data Scientist in AI assistant team }{}
+
+      {July - October 2023 year}{}
+      \vspace{-2.0mm}
+      
+      \resumeItemListStart
+        \item {Worked with assessors: preparing tasks for them, and starting/stopping markup}
+        \item {Optimized of yql queries}
+        \item {Prepared and configured the dashboard, including all necessary data preprocessing}
+        \item {Worked with developers about possible features - analized their profit}
+      \resumeItemListEnd
+
+      
+    \vspace{-3.0mm}
+
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {University: Moscow Institute of Physics and Technology}{}
+        {}{}
+      \resumeItemListStart
+        \item {Years of study: 2021-2025}
+        \item {Bachelor's Degree: Applied Mathematics and Computer Science}{}
+        \item {Department: Data Analysis (Tinkoff)}
+        \item {Average mark: 8.5/10}
+        \item {Diplom: LLM chart analysis in investments}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Courses studied:}{}
+      {AB - tests, mathematical statistics, ML, NLP, Algorithms and data structures, Multithreaded synchronization and etc.}{}
+  \resumeSubheading
+      {Lyceum 1511 at Moscow Engineering Physics Institute}{}
+      {High School. Years of study: 2019-2021}{}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {Multimodal search via CLIP} %Project Name
+      {Implemented a backend+frontend server for multimodal search} %Project Name, Location Name
+      {Spring of 2024, \href{https://github.com/Rogov-KS/MultimodalRetrieval}{github link}} %Event Dates
+
+      \resumeItemListStart
+        \item {Multimodal model - OpenAI's CLIP}
+        \item {Vector index - FAISS}
+        \item {Backend's fraemwork - FastAPI}
+        \item {Frontend's fraemwork - ReactJS}
+    \resumeItemListEnd
+    \vspace{-2.0mm}
+    
+    \resumeProject
+      {Implemented an analogue of popular classes from the std library for C++} %Project Name
+      {An analogue of the basic functionality of the std::deque, std::list classes and smart pointers from std is implemented} %Project Name, Location Name
+      {\href{https://github.com/Rogov-KS/C_plus_plus_tasks}{github link}} %Event Dates
+
+      \resumeItemListStart
+    \resumeItemListEnd
+    \vspace{-2.0mm}
+
+    \resumeProject
+      {Implemented Wargame on Python} %Project Name
+      {} %Project Name, Location Name
+      {\href{https://github.com/Rogov-KS/TP_Project}{github link}} %Event Dates
+
+    \resumeProject
+      {Telegram bot on Python} %Project Name
+      {} %Project Name, Location Name
+      {\href{https://github.com/Rogov-KS/Telegram_first_bot}{github link}} %Event Dates
+
+    \vspace{-2.0mm}
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Programming languages:}{\ Python, C++, SQL} \\
+     \textbf{Python Libraries:}{\ PyTorch, SciPy, Numpy, Pandas, Seaborn, Matplotlib, Plotly, Prophet} \\
+    \textbf{Other Hard Skills:}{\ Git, Docker, Bash} \\
+     \textbf{Soft Skills:}{\ With classmates from the lyceum, he conducted the initiation into the lyceum of new 10th graders} \\
+     % \textbf{Field of Interest}{: } \\
+     \textbf{Hobbies:}{\ Sport (gym + running + ball games)} \\
+     \textbf{Languages:}{\ Russian, English(intermediate)} \\
+    }}
+ 
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+% %-----------Positions of Responsibility-----------------
+% \section{\textbf{Positions of Responsibility}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumePOR{Position, } % Position
+%     {Club or Event} %Club,Event
+%     {Position tenure} %Tenure Period
+%     -work description in 1 line
+% \resumePOR{Position, } % Position
+%     {Club or Event} %Club,Event
+%     {Position tenure} %Tenure Period
+% -work description in 1 line
+    
+% \resumeSubHeadingListEnd
+% \vspace{-5mm}
+
+
+
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{All-Russian Olympiad of Schoolchildren in Physics} % Award
+    {} % Event
+    {Winner, 2021} %Event Year
+    
+\resumePOR{Moscow Olympiad of Schoolchildren in Physics} % Award
+    {} % Event
+    {Winner, 2021} %Event Year
+    
+\resumePOR{Olympiad "Conquer the Vorobyovy mountains" \ in Physics} % Award
+    {} % Event
+    {Winner, 2021} %Event Year
+    
+\resumePOR{Olympiad Phystech in math} % Award
+    {} % Event
+    {Winner, 2021} %Event Year
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+%-------------------------------------------
+\end{document}
