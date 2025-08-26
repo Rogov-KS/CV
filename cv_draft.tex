@@ -158,27 +158,28 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Яндекс - Стажёр-ML-разработчик в команде турецкого поиска}{}
+      {Яндекс - ML-разработчик в команде международного поиска}{}
       
-      {июль - по текущее время}{}
+      {Июль 2024 - по текущее время}{}
       \vspace{-2.0mm}
 
       \resumeItemListStart
-        \item {Работа с API современных LLM: разметка тасок с помощью GPT4-o и Claude Sonnet-3.5}
-        \item {Весь пайплайн обучения катбуста на размеченных данных (кроме обучения базовой модели) - предобработка данных, разметка данных базовой моделью, дистиляция базовой модели в формулу (с подбором гиперпараметров), выкатка в прод и оффлайн эксперимент}
+        \item {Занимался построением пайплайна для обучения моделей CatBoost на размеченных данных: от предобработки и автоматической разметки с использованием современных LLM до дистилляции и интеграции модели в прод}
+        \item {Применял современные LLM (YaGPT5-Pro, GPT-4o, Claude Sonnet-3.5) для улучшения качества данных и автоматизации процессов}
+        \item {Разработал механизм включения предсказаний базовой модели (дссм) в качестве признаков для повышения точности CatBoost}
+        \item {Сделал автоматическую LLM-генерация выразительных и кликабельных названий сайтов — для улучшения качества поисковой выдачи}
       \resumeItemListEnd
 
     \resumeSubheading
       {Яндекс - Стажёр-Аналитик в команде Алисы}{}
 
-      {июль - октябрь 2023 года}{}
+      {Июль - Октябрь 2023 года}{}
       \vspace{-2.0mm}
 
       \resumeItemListStart
-        \item {Работа с асессорами: подготовка заданий для них, и запуск\остановка разметки}
-        \item {Оптимизация yql-запросов}
-        \item {Подготовка и настрока дашборда, включая всю необходимую предобработку данных}
-        \item {Общение с разработчиками по поводу возможных фичей}
+        \item {Курировал процесс оценки качества моделей: формулировал задания для асессоров, управлял процессом аннотирования}
+        \item {Повысил производительность аналитических запросов за счёт оптимизации YQL}
+        \item {Разработал и внедрил дашборд для мониторинга части метрик умного ассистента, включая предобработку данных}
       \resumeItemListEnd
 
       
@@ -195,22 +196,21 @@
 \section{\textbf{Education}}
   \resumeSubHeadingListStart
     \resumeSubheading
-        {МФТИ - Бакалавриат прикладная математика и информатика}{}
+        {ВУЗ - МФТИ - Бакалавриат прикладная математика и информатика}{}
         {}{}
       \resumeItemListStart
         \item {Года обучения: 2021-2025}
-        \item {Бакалавриат: прикладная математика и информатика}{}
-        \item {кафедра - Анализ данных (Тинькофф)}
+        \item {Кафедра - Финансовых технологий (от Т-Банк'а)}
         \item {Средний балл: 8.5/10}
-        \item {Диплом: применение LLM для инвестиций}
+        \item {Тематика диплома: применение моделей LLM для задач инвестиционного анализа}
       \resumeItemListEnd
     
     \resumeSubheading
-      {Изучаемые курсы}{}
-      {Количественные финансы, AB - тесты (включая CI), Математическая статистика, ML, NLP, АиСД, параллелизм и т.д}{}
+      {Изученные курсы}{}
+      {ML, NLP, CV, A/B-тестирование(включая CI), мат стат, АиСД, параллелизм, количественные финансы и т.д}{}
   \resumeSubheading
-      {Лицей 1511 при МИФИ}{}
-      {Старшая школа}{года обучения: 2019-2021}
+      {Старшая школа - Лицей 1511 при МИФИ}{}
+      { }{года обучения: 2019-2021}
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 %
@@ -221,38 +221,39 @@
 \resumeSubHeadingListStart
 
     \resumeProject
+      {Transformer-based Market Oracle} %Project Name
+      {} %Project Name, Location Name
+      {\href{https://github.com/Rogov-KS/CvMarketOracle}{github link}} %Event Dates
+
+      \resumeItemListStart
+        \item {Модель включала механизм внимания, слои LSTM и свёрточные слои}
+        \item {Датасет собрал из данных мосбиржи}
+        \item {Для экспериментов с обучением использовал библиотеки PyTorch Lightning и Hydra}
+    \resumeItemListEnd
+
+    \vspace{-2.0mm}
+
+    \resumeProject
       {Мультимодальный поиск с помощью CLIP} %Project Name
-      {Реализован backend+frontend сервер для мультимодального поиска} %Project Name, Location Name
-      {весна 2024, \href{https://github.com/Rogov-KS/MultimodalRetrieval}{github link}} %Event Dates
+      {Реализован backend+frontend сервер для инференса модели CLIP мультимодального поиска} %Project Name, Location Name
+      {\href{https://github.com/Rogov-KS/MultimodalRetrieval}{github link}} %Event Dates
 
-      \resumeItemListStart
-        \item {Мультимодальная модель - CLIP от OpenAI}
-        \item {Векторный индекс - FAISS}
-        \item {Фреймворк для backend сервера - FastAPI}
-        \item {Фреймворк для frontend сервера - ReactJS}
-    \resumeItemListEnd
-    \vspace{-2.0mm}
-    
-    \resumeProject
-      {Аналог популярных классов из библиотеки std для C++} %Project Name
-      {Реализован аналог основных функциональностей классов std::deque, std::list и умных указателей из std} %Project Name, Location Name
-      {\href{https://github.com/Rogov-KS/C_plus_plus_tasks}{github link}} %Event Dates
-
-      \resumeItemListStart
-    \resumeItemListEnd
     \vspace{-2.0mm}
 
     \resumeProject
-      {Wargame на питоне} %Project Name
-      {Завоюй вражеские замки с помощью пехоты, кавалерии и копейщиков} %Project Name, Location Name
-      {\href{https://github.com/Rogov-KS/TP_Project}{github link}} %Event Dates
-
-    \resumeProject
-      {Telegram bot на питоне} %Project Name
-      {Оповещения и скрипты о курсах валют + парсинг сайта} %Project Name, Location Name
-      {\href{https://github.com/Rogov-KS/Telegram_first_bot}{github link}} %Event Dates
+      {Змейка в tg-mini-app} %Project Name
+      {Fullstack-приложение на FastAPI и ReactJS с авторизацией через access token с БД через SQLAlchemy} %Project Name, Location Name
+      {\href{https://github.com/Rogov-KS/TgWebApp}{github link}} %Event Dates
 
     \vspace{-2.0mm}
+
+    \resumeProject
+      {Python приложение бронирование отелей} %Project Name
+      {API-сервис на FastAPI с использованием SQLAlchemy, Redis и Alembic для управления бронированиями отелей} %Project Name, Location Name
+      {\href{https://github.com/Rogov-KS/CvFastApi}{github link}} %Event Dates
+
+    \vspace{-2.0mm}
+
     
       
   \resumeSubHeadingListEnd
@@ -265,9 +266,9 @@
  \begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
      \textbf{Языки программирования:}{\ Python, C++, SQL} \\
-     \textbf{Python Libraries:}{\ PyTorch, SciPy, Numpy, Pandas, Seaborn, Matplotlib, Plotly, Prophet} \\
-    \textbf{Другие hard skills:}{\ Git, Docker, Bash} \\
-     \textbf{Soft Skills:}{\ С одноклассниками из лицея проводил посвященные в лицеисты новых 10ки классников} \\
+     \textbf{Python Libraries:}{\ PyTorch, Transformers, Datasets, SciPy, Numpy, Pandas, Polars, Seaborn, Matplotlib, Plotly, Pytest, FastAPI, Pydantic, SQLAlchemy, Alembic, RedisPy, uv} \\
+    \textbf{Другие hard skills:}{\ Jira, Confluence, Git, Docker, Bash, pre-commit} \\
+     % \textbf{Soft Skills:}{\ С одноклассниками из лицея проводил посвященные в лицеисты новых 10ки классников} \\
      % \textbf{Field of Interest}{: } \\
      \textbf{Hobbies:}{\ Спорт (тренажерный зал + бег + игры с мячом)} \\
      \textbf{Языки:}{\ Русский, Английский(intermediate)} \\
